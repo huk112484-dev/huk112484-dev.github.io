@@ -1,0 +1,80 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+
+media_folder: "docs/public/uploads"
+public_folder: "/uploads"
+
+editor:
+  preview: false
+
+collections:
+  - name: "fixed_pages"
+    label: "固定页面编辑"
+    files:
+      - label: "首页"
+        name: "home"
+        file: "docs/index.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "关于我"
+        name: "about"
+        file: "docs/about.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "学习复盘总览"
+        name: "diary_index"
+        file: "docs/diary/index.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "2026年6月学习日记"
+        name: "diary_2026_06"
+        file: "docs/diary/2026-06.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "科研成长首页"
+        name: "research_index"
+        file: "docs/research/index.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "无人机无线电地图项目首页"
+        name: "uav_radio_map_index"
+        file: "docs/research/uav-radio-map/index.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "阶段性总结"
+        name: "uav_radio_map_summary"
+        file: "docs/research/uav-radio-map/summary.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "实验数据汇总"
+        name: "uav_radio_map_results"
+        file: "docs/research/uav-radio-map/results.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "参考文献与资料"
+        name: "uav_radio_map_references"
+        file: "docs/research/uav-radio-map/references.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "周复盘首页"
+        name: "weekly_index"
+        file: "docs/weekly/index.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
+
+      - label: "2026年第1周复盘"
+        name: "weekly_2026_week_01"
+        file: "docs/weekly/2026-week-01.md"
+        fields:
+          - { label: "正文", name: "body", widget: "markdown" }
